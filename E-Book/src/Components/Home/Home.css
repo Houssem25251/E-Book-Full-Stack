@@ -1,0 +1,140 @@
+.HomeDiv{
+    display:flex;
+    flex-direction: column;
+}
+.Main{
+    width:100%;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
+}
+.Welcome{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:50px;
+    color:rgb(169,169,169);
+    text-align: center;
+    margin-top:60px
+}
+.ReadMore{
+    text-decoration: underline;
+    margin-left:2px;
+}
+.ReadMore:hover{
+    cursor:pointer;
+}
+.Welcome-D{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:25px;
+    color:rgb(169,169,169);
+    text-align: center;
+    margin-top:-13px;
+    line-height: 1.3;
+}
+.Welcome-G{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:25px;
+    color:rgb(169,169,169);
+    text-align: center;
+    margin-top:-13px;
+    line-height: 1.3;
+}
+.Main2{
+    width:100%;
+    flex-shrink: 0;
+}
+
+.Div-B{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+.B{
+    border-radius: 100px;
+    border-style:solid;
+    width:15px;
+    height: 15px;
+    border-color:rgb(43, 43, 43);
+    background-color: rgb(43, 43, 43);
+    transition:all ease 0.1s;
+}
+.Slider{
+    display:flex;
+    width:100%;
+    transition: transform 0.6s ease-in-out;
+    margin-top: 43px;
+}
+.B:hover{
+    background-color:white;
+    border-color:white;
+    cursor:pointer;
+}
+
+@media (max-width: 1024px){
+    .Welcome{
+        font-size:40px;
+        margin-top:80px;
+    }
+
+    .Welcome-D,
+    .Welcome-G{
+        font-size:22px;
+    }
+
+    .Slider{
+        margin-top:35px;
+    }
+
+    .Div-B{
+        column-gap:12px;
+    }
+
+    .B{
+        width:14px;
+        height:14px;
+    }
+}
+
+
+@media (max-width:768px){
+    .HomeDiv{
+        padding-top:60px;
+        margin-top:80px;
+    }
+
+    .Welcome{
+        font-size:35px;
+        margin-top:0;
+    }
+
+    .Welcome-D,
+    .Welcome-G{
+        font-size:20px;
+    }
+
+    .Slider{
+        margin-top:30px;
+    }
+
+    .Div-B{
+        column-gap:10px;
+    }
+
+    .B{
+        width:12px;
+        height:12px;
+    }
+}
+@media (max-width:414px){
+    .HomeDiv{
+        margin-top:100px;
+        width:100%;
+        margin: 100px auto 0 auto;
+    }
+    .Welcome{
+        font-size:38px;
+    }
+    .Welcome-D,.Welcome-G{
+        font-size:20px;
+    }
+}

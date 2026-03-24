@@ -1,0 +1,176 @@
+.CatPicture{
+    width:250px;
+}
+.CatText{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:25px;
+    position: absolute;
+    color:white;
+    width:250px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    height: 35px;
+    padding-top:3.5px;
+}
+.CategoryDiv{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:250px;
+}
+.MainCat{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    height: 500px;
+    transition: all 0.5s ease;
+}
+.MainCat.show{
+    height: 865px;
+}
+.CatTitle{
+    color:rgb(169,169,169);
+    font-size:50px;
+    text-align: center;
+}
+.CategoriesContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ButtonCat,.ButtonCat1{
+    margin-top:40px;
+    width:120px;
+    height: 35px;
+    border-style:solid;
+    border-radius: 20px;
+    background-color:rgb(72,72,72);
+    color:white;
+    border-color:white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:15px;
+    transition: all 0.3s ease;
+}
+.ButtonCat:hover,.ButtonCat1:hover{
+    background-color: white;
+    color:rgb(72,72,72);
+    cursor:pointer;
+}
+.cat{
+    transition: all 1s ease;
+    opacity:0;
+}
+.cat:hover{
+    cursor:pointer;
+}
+.cat.show{
+    opacity:1;
+}
+.cat1:hover{
+    cursor:pointer;
+}
+
+
+@media (max-width: 1024px){
+    .CatPicture{
+        width:200px;
+    }
+
+    .CatText{
+        font-size:22px;
+        width:200px;
+        height:32px;
+    }
+
+    .CategoryDiv{
+        width:200px;
+    }
+
+    .MainCat{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap:30px;
+        row-gap:30px;
+        height:auto;
+    }
+    .MainCat.show{
+        height: auto;
+    }
+
+    .CatTitle{
+        font-size:40px;
+    }
+
+    .ButtonCat,.ButtonCat1{
+        width:100px;
+        height:32px;
+        font-size:14px;
+    }
+}
+
+@media (max-width: 768px){
+    .CatPicture{
+        width:170px;
+    }
+
+    .CatText{
+        font-size:20px;
+        width:170px;
+        height:30px;
+    }
+
+    .CategoryDiv{
+        width:170px;
+    }
+
+    .MainCat {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        height: auto;
+    }
+    .MainCat.show {
+        height: auto;
+    }
+    .CatTitle{
+        font-size:35px;
+    }
+
+    .ButtonCat,.ButtonCat1{
+        width:90px;
+        height:30px;
+        font-size:13px;
+        margin-top:80px;
+        
+    }
+}
+
+@media (max-width:414px){
+    .MainCat{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left:10px;
+        margin-right:10px;
+        row-gap:20px;
+        column-gap: 20px;
+    }
+    .CatPicture{
+        width:150px;
+    }
+    .CatText{
+        font-size: 18px;
+        width: 150px;
+        text-align: center;
+        height: 28px;
+        
+    }
+    .CategoryDiv{
+        width:150px;
+    }
+    .ButtonCat1{
+        margin-top:160px;
+    }
+}

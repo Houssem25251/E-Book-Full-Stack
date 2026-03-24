@@ -1,0 +1,149 @@
+.BookCard{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.4s ease;
+    width:179px; 
+}
+
+.BookCard-Image{
+    width:100%;
+    height:250px;
+    transition: all 0.4s ease;
+    display:block;
+    object-fit: cover;
+}
+
+.Link-To-Book{
+    width:100%;
+    height:250px;
+}
+
+.bookcard-title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:15px;
+    font-weight: bold;
+    position: absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    text-align: center;
+    width:100%;
+    height:35px;
+    bottom:85px;
+    background-color: rgba(0,0,0,0.4);
+    padding:3.5px 0;
+}
+
+.BookCard-Button-Favorite,
+.BookCard-Button-Saved{
+    position: absolute;
+    background-color: transparent;
+    border:none;
+}
+
+.BookCard-Button-Favorite{
+    top:205px;
+    right:10px;
+}
+
+.BookCard-Button-Saved{
+    top:205px;
+    left:10px;
+}
+
+.BookCardFavorite{
+    width:30px;
+    height:30px;
+    transition: all 0.4s ease;
+}
+
+
+@media (max-width:1024px){
+    .BookCard{
+        width:150px;
+    }
+    .BookCard-Image{
+        height:220px;
+    }
+    .Link-To-Book{
+        height:220px;
+    }
+    .bookcard-title{
+        font-size:14px;
+        bottom:75px;
+    }
+    .BookCard-Button-Favorite{
+        top:180px;
+        right:8px;
+    }
+    .BookCard-Button-Saved{
+        top:180px;
+        left:8px;
+    }
+    .BookCardFavorite{
+        width:28px;
+        height:28px;
+    }
+}
+
+
+@media (max-width:768px){
+    .BookCard{
+        width:120px;
+    }
+    .BookCard-Image{
+        height:190px;
+    }
+    .Link-To-Book{
+        height:190px;
+    }
+    .bookcard-title{
+        font-size:13px;
+        bottom:65px;
+    }
+    .BookCard-Button-Favorite{
+        top:155px;
+        right:6px;
+    }
+    .BookCard-Button-Saved{
+        top:155px;
+        left:6px;
+    }
+    .BookCardFavorite{
+        width:26px;
+        height:26px;
+    }
+}
+
+
+@media (max-width:414px){
+    .BookCard{
+        width:80px;
+    }
+    .BookCard-Image{
+        height:150px;
+    }
+    .Link-To-Book{
+        height:150px;
+    }
+    .bookcard-title{
+        font-size:12px;
+        bottom:50px;
+    }
+    .BookCard-Button-Favorite{
+        top:118px;
+        right:5px;
+    }
+    .BookCard-Button-Saved{
+        top:118px;
+        left:5px;
+    }
+    .BookCardFavorite{
+        width:23px;
+        height:23px;
+    }
+}

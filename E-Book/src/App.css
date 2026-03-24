@@ -1,0 +1,30 @@
+.AppDiv{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:auto;
+    left:0;
+    right:0;
+}
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+@media (max-width:414px){
+    .AppDiv{
+        width:100%;
+    }
+}
+
+@media (max-width: 1024px){
+    .AppDiv{
+        width:100%;
+    }
+}
+
+@media (max-width: 768px){
+    .AppDiv{
+        width:100%;
+    }
+}

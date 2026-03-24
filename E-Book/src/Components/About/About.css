@@ -1,0 +1,96 @@
+.About-Text{
+    font-size:25px;
+    color:white;
+    font-weight: bold;
+    width:100%;
+    background-color:rgba(0,0,0,0.4);
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom:20px;
+}
+
+.About-Container{
+    display:flex;
+    flex-direction: column;
+}
+
+.About-Text-Sub{
+    font-size:22px;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-left:10px;
+}
+.githublinkedin-link{
+    color:white;
+    text-decoration: none;
+    font-size:22px;
+}
+.githublinkedin-link:hover{
+    text-decoration: underline;
+}
+.PUBLICDOMAIN{
+    text-align: center;
+    text-underline-offset: 5px;
+}
+.IMPORTANT{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.gutenberg{
+    color: white;
+    text-decoration: none;
+}
+.gutenberg:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px){
+    .About-Text{
+        font-size:22px;
+    }
+
+    .About-Text-Sub{
+        font-size:20px;
+        line-height:1.4;
+    }
+
+    .githublinkedin-link{
+        font-size:14px;
+    }
+}
+
+@media (max-width: 768px){
+    .About-Text{
+        font-size:18px;
+    }
+
+    .About-Text-Sub{
+        font-size:16px;
+        margin-left:0;
+        text-align:center;
+    }
+
+    .About-Container{
+        align-items:center;
+    }
+}
+
+@media (max-width: 414px){
+    .About-Text{
+        font-size:16px;
+        padding-top:8px;
+        padding-bottom:8px;
+    }
+
+    .About-Text-Sub{
+        font-size:14px;
+    }
+
+    .githublinkedin-link{
+        font-size:13px;
+    }
+}

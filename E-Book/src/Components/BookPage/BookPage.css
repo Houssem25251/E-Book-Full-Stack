@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+.BookPage{
+    background-color: rgb(72,72,72);
+    width:900px;
+    height: 920px;
+    margin-bottom:-10px;
+    margin-top:42px;
+}
+.MainBookPage{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-title{
+    font-size:45px;
+    color:white;
+    font-family: "Google Sans", sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-bottom:80px;
+}
+.BookPage-Image{
+    width:350px;
+    height: 500px;
+    margin-left:50px;
+}
+.BookPage-Content{
+    display:flex;
+    column-gap: 20px;
+}
+.sub-book-content{
+    display:flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.book-author{
+    color:white;
+    font-family:"Lobster", sans-serif;
+    font-size:35px;
+    margin-top:10px;
+    margin-bottom:25px;
+}
+.ReviewsContainer{
+    display:flex;
+    column-gap: 8px;
+}
+.STAR{
+    width:30px;
+}
+.book-description{
+    color:white;
+    font-family:"Lobster", sans-serif;
+    font-size:35px;
+    margin-top:25px;
+}
+.download{
+    text-decoration: none;
+    font-size:17px;
+    color:white;
+    font-family: "Google Sans", sans-serif;
+    border:2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    width:190px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:20px;
+    padding-right:20px;
+    font-weight: bold; 
+}
+.download:hover{
+    background-color: white;
+    color:rgb(56,56,56);
+    cursor:pointer;
+}
+.parent-download{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    column-gap: 10px;
+    margin-left:-20px;
+}
+
+@media (max-width: 1024px){
+    .BookPage{
+        width:800px;
+        height:800px;
+        margin-top:30px;
+    }
+
+    .BookPage-Image{
+        width:300px;
+        height:430px;
+        margin-left:30px;
+    }
+
+    .book-title{
+        font-size:50px;
+        margin-bottom:60px;
+    }
+
+    .book-author{
+        font-size:40px;
+        margin-top:8px;
+        margin-bottom:20px;
+    }
+
+    .book-description{
+        font-size:34px;
+        margin-top:20px;
+    }
+
+    .download{
+        font-size:16px;
+        width:180px;
+        padding:4px 15px;
+    }
+}
+
+@media (max-width: 768px){
+    .BookPage{
+        width:500px;
+        height:auto;
+        margin-top:150px;
+        padding-bottom:20px;
+    }
+
+    .BookPage-Image{
+        width:250px;
+        height:360px;
+        margin-left:20px;
+    }
+
+    .book-title{
+        font-size:35px;
+        margin-bottom:40px;
+    }
+
+    .book-author{
+        font-size:26px;
+        margin-top:6px;
+        margin-bottom:15px;
+    }
+
+    .book-description{
+        font-size:25px;
+        margin-top:15px;
+        text-align: center;
+    }
+
+    .download{
+        font-size:15px;
+        width:140px;
+        padding:4px 12px;
+    }
+
+    .BookPage-Content{
+        flex-direction: column;
+        align-items: center;
+        column-gap:0;
+    }
+
+    .sub-book-content{
+        row-gap:8px;
+        align-items:center;
+    }
+
+    .parent-download{
+        column-gap:8px;
+        margin-left:0;
+    }
+
+    .ReviewsContainer{
+        justify-content:center;
+        column-gap:6px;
+    }
+}
+
+@media (max-width: 414px){
+    .BookPage{
+        width:100%;
+        height:auto;
+        margin-top:150px;
+        padding-bottom:30px;
+    }
+
+    .BookPage-Image{
+        width:180px;
+        height:260px;
+        margin-left:0;
+        margin-bottom:15px;
+    }
+
+    .book-title{
+        font-size:30px;
+        margin-bottom:30px;
+    }
+
+    .book-author{
+        font-size:20px;
+        margin-top:5px;
+        margin-bottom:12px;
+        text-align:center;
+    }
+
+    .book-description{
+        font-size:20px;
+        margin-top:12px;
+        text-align:center;
+    }
+
+    .download{
+        font-size:14px;
+        width:120px;
+        padding:4px 10px;
+    }
+
+    .BookPage-Content{
+        flex-direction: column;
+        align-items: center;
+        column-gap:0;
+    }
+
+    .sub-book-content{
+        row-gap:6px;
+        align-items:center;
+    }
+
+    .parent-download{
+        column-gap:6px;
+        margin-left:0;
+        flex-wrap: wrap;
+    }
+
+    .ReviewsContainer{
+        justify-content:center;
+        column-gap:4px;
+        flex-wrap: wrap;
+    }
+}
+
+
+
