@@ -104,6 +104,12 @@
     color: rgb(105,105,105);
 }
 
+.Header-Username {
+    color: white; 
+    font-size: 20px;
+    margin-right:20px;
+}
+
 @media (max-width: 1024px) {
     .Header { column-gap:10px; }
     .Header-Part { width:120px;font-size: 18px; padding: 0 8px; }

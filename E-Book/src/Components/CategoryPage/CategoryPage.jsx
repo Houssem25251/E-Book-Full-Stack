@@ -3,7 +3,7 @@ import './CategoryPage.css';
 import { useParams } from 'react-router';
 import {BookCard} from '../BookCard/BookCard.jsx';
 
-export function CategoryPage({Search,setSearch,CategoriesArray,books,booksfav,setbooksfav,bookssaved,setbookssaved}){
+export function CategoryPage({Search,setSearch,CategoriesArray,books,booksfav,toggleFav,bookssaved,toggleSaved,user,onLogout}){
      let {id}=useParams();
     const cat=CategoriesArray.find(k=>k.id===Number(id));
     
@@ -19,12 +19,12 @@ export function CategoryPage({Search,setSearch,CategoriesArray,books,booksfav,se
     console.log('Filtered books count:', CatBooks.length);
     return(
         <div className="MainCategoryPage">
-            <Header Search={Search} setSearch={setSearch}/>
+            <Header Search={Search} setSearch={setSearch} user={user} onLogout={onLogout}/>
             <div className="CategoryPage">
                 <div className="CategoryPage-Books">
                     {CatBooks.map((c)=>{
                         return(
-                            <BookCard key={c.id} s={c} booksfav={booksfav} setbooksfav={setbooksfav} bookssaved={bookssaved} setbookssaved={setbookssaved}/>
+                            <BookCard key={c.id} s={c} booksfav={booksfav} toggleFav={toggleFav} bookssaved={bookssaved} toggleSaved={toggleSaved}/>
                         )
                     })}
                 </div>

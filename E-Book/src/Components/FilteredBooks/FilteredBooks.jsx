@@ -2,7 +2,7 @@ import {Header} from '../Header/Header.jsx';
 import './FilteredBooks.css';
 import {BookCard} from '../BookCard/BookCard.jsx';
 
-export function FilteredBooks({Search,setSearch,books,booksfav,setbooksfav,bookssaved,setbookssaved}){
+export function FilteredBooks({Search,setSearch,books,booksfav,toggleFav,bookssaved,toggleSaved,user,onLogout}){
     const FilteredBooksSearch = [...new Map(
         books
     .filter(b => b.title.toLowerCase().includes(Search.toLowerCase()) || 
@@ -23,12 +23,12 @@ export function FilteredBooks({Search,setSearch,books,booksfav,setbooksfav,books
     else{
         return(
         <div className="MainFilteredBooksPage">
-            <Header Search={Search} setSearch={setSearch}/>
+            <Header Search={Search} setSearch={setSearch} user={user} onLogout={onLogout}/>
             <div className="FilteredBooksPage">
                 <div className="FilteredPage-Books">
                     {FilteredBooksSearch.map((c)=>{
                         return(
-                            <BookCard key={c.id} s={c} booksfav={booksfav} setbooksfav={setbooksfav} bookssaved={bookssaved} setbookssaved={setbookssaved}/>
+                            <BookCard key={c.id} s={c} booksfav={booksfav} toggleFav={toggleFav} bookssaved={bookssaved} toggleSaved={toggleSaved}/>
                         )
                     })}
                 </div>
